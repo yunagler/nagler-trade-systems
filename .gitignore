@@ -1,0 +1,5 @@
+images/frames/
+images/admin_*.png
+images/site_*.png
+*.log
+.DS_Store
