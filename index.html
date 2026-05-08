@@ -5741,15 +5741,6 @@
 
     // Block image drag
     document.addEventListener('dragstart', e => { if (e.target.tagName === 'IMG') e.preventDefault(); });
-
-    // Blur on devtools open (heuristic)
-    setInterval(() => {
-      if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
-        document.body.style.filter = 'blur(20px)';
-      } else {
-        document.body.style.filter = '';
-      }
-    }, 1000);
   })();
 
   // === PASSWORD GATE ===
